@@ -1,0 +1,53 @@
+.footer {
+    background-color: #0e0b14;
+    padding: 8px;
+
+    &__Container {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        @media (max-width:768px) {
+            max-width: 100%;
+            width: 100%;
+            flex-flow: row wrap;
+        }
+    }
+
+    &__logo {
+        height: 36px;
+        margin: 0 auto 10px;
+    }
+
+    &__links {
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__item {
+            display: inline-block;
+
+            a {
+                padding: 8px 16px;
+                display: block;
+
+                
+                @media (max-width:768px) {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                &:hover {
+                    color: #f9f9f9;
+                }
+            }
+        }
+    }
+
+    p {
+        margin: 8px 28px;
+    }
+
+}
