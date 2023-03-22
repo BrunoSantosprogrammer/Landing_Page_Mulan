@@ -4,28 +4,15 @@
     left: 0;
     background-color: transparent;
 
-    @media (max-width: 768px) {
-        max-width: 100%;
-        width: 100%;
-    }
-
     &__logo {
         height: 36px;
         padding-left: 36px;
-
-        @media (max-width: 768px) {
-            padding: 0,
-        }
     }
 
     &__container {
         display: flex;
         align-items: center;
         transition: all 2s ease-in-out;
-
-        @media (max-width: 768px) {
-            justify-content: center;
-        }
 
         &:hover {
             background-color: rgb(26, 29, 41);
@@ -42,6 +29,15 @@
         letter-spacing: 1px;
         padding: 16px 18px;
 
+        @media (max-width: 768px) {
+            padding: 8px;
+        }
+
+        &__item {
+            &__menu {
+                display: none;
+            }
+        }
 
         &__item a {
             display: flex;
@@ -56,6 +52,7 @@
                 p {
                     display: none;
                 }
+
             }
 
             &:hover p {
@@ -69,5 +66,3 @@
         }
     }
 }
-
-
